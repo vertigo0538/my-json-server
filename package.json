@@ -1,0 +1,29 @@
+{
+  "name": "my-json-server",
+  "version": "1.0.0",
+  "description": "https://my-json-server.typicode.com/",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watch"
+  },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "jest-extended"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ston0538/my-json-server.git"
+  },
+  "author": "KHK",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ston0538/my-json-server/issues"
+  },
+  "homepage": "https://github.com/ston0538/my-json-server#readme",
+  "devDependencies": {
+    "faker": "^4.1.0",
+    "jest": "^26.0.1",
+    "jest-extended": "^0.11.5"
+  }
+}
