@@ -14,18 +14,19 @@ describe("make fake data ", () => {
 
 describe("Json data function test", () => {
   test("mock function test", () => {
-    const createUser = () => {
+    const createUser = (limit) => {
       return {
+        id: faker.random.uuid(),
         name: faker.name.findName(),
         state: faker.address.state(),
         age: Math.floor(Math.random() * 100),
       };
     };
-    const createUsers = (numUsers = 5) => {
+    const createUsers = (numUsers) => {
       return new Array(numUsers).fill(undefined).map(createUser);
     };
 
-    let fakeUsers = createUsers(5);
+    let fakeUsers = createUsers(10);
     const data = new Object();
     data.profile = fakeUsers;
     console.log(data);

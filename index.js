@@ -2,6 +2,7 @@ let faker = require("faker/locale/ko");
 let fs = require("fs");
 const createUser = () => {
   return {
+    id: faker.random.uuid(),
     name: faker.name.findName(),
     state: faker.address.state(),
     age: Math.floor(Math.random() * 100),
