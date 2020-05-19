@@ -4,7 +4,8 @@
   "description": "https://my-json-server.typicode.com/",
   "main": "index.js",
   "scripts": {
-    "test": "jest --watch"
+    "test": "jest --watch",
+    "dev": "nodemon --exec babel-node index.js"
   },
   "jest": {
     "setupFilesAfterEnv": [
@@ -22,8 +23,16 @@
   },
   "homepage": "https://github.com/ston0538/my-json-server#readme",
   "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.6",
+    "@babel/node": "^7.8.7",
+    "@babel/preset-env": "^7.9.6",
     "faker": "^4.1.0",
     "jest": "^26.0.1",
-    "jest-extended": "^0.11.5"
+    "jest-extended": "^0.11.5",
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "babel-jest": "^26.0.1"
   }
 }
